@@ -17,12 +17,14 @@ axios
 const getUsers = () => {
     dataGlobal.forEach(element => {
         content.innerHTML += `
-        <h1>${element.name}</h1>
+        <h1>${element.username}</h1>
         `
-        console.log(element.name) //Imprimir por consola solo el nombre de los usuarios
+        console.log(element.name)
+        console.log(element.username) //Imprimir por consola solo el nombre de los usuarios
     })
     console.log(dataGlobal) //Imprimir por consola la lista de usuarios
 }
+
 
 
 getUsersBtn.addEventListener('click' , getUsers)
